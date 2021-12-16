@@ -203,9 +203,8 @@ main {
 }
 
 .card__project {
-  display: flex;
-  flex-direction: row;
-  justify-self: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 
 .project__img {
@@ -214,11 +213,10 @@ main {
 
 .project__description {
   margin-top: 50px;
-  margin-left: 50px;
 }
 
 .project__page {
-    margin-bottom: 25px;
+  margin-bottom: 25px;
   margin-left: 50px;
 }
 
@@ -777,6 +775,9 @@ button {
   .profile .card__tabs{
     margin-left: 3%;
   }
+  .tilte__tabs{
+    display: none;
+  }
 }
 
 @media screen and (max-width: 400px) {
@@ -795,5 +796,15 @@ button {
   }
   .wrapper .search-box input {
     padding-right: 30px;
+  }
+  .project__page{
+    padding: 15px;
+    width: 100%;
+    margin-left: -20px;
+  }
+  .card__project{
+    display: none;
+    display: flex;
+    flex-direction: column;
   }
 }
