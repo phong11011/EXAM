@@ -398,7 +398,9 @@ button {
   button:hover {
     background-color: var(--pink-color);
   }
- 
+ .profile__contact{
+   border-radius: 15px;
+ }
   /* tabs */ 
 
   .card__tabs{
